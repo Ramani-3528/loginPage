@@ -97,7 +97,7 @@ button{
 }
 
 .userPage{
-    background: linear-gradient(135deg, #033c3c, #09b1ba);
+    background: linear-gradient(135deg, #022b2b, #09b1ba);
     padding: 2rem;
     border-radius: 3rem;
     /* margin-top: 2rem; */
@@ -116,7 +116,7 @@ button{
         margin: 4rem;
     }
     .userPage{
-        padding: 0rem;
+        margin: 4rem;
         border-radius: 1rem;
     }
     input,
