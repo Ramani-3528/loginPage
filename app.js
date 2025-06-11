@@ -3,7 +3,7 @@ function login(){
   const pass = document.getElementById("Password").value;
 
   if (user === "ramani" && pass === "2343") {
-    document.getElementById("output").innerText="Login successful";
+    document.getElementById("output");
     window.location.href="./login.html";
   }
   else if (user === "" || pass === "") {
