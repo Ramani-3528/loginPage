@@ -113,7 +113,7 @@ button{
 /* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
 @media (max-width: 576){
     .userPageContainer{
-        padding: 4rem;
+        margin: 4rem;
     }
 }
 
