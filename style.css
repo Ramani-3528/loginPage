@@ -95,6 +95,10 @@ button{
     background-color: rgb(4, 139, 149);
     border-radius: 10px;
 }
+button:hover{
+    background-color: burlywood;
+    color: #022b2b;
+}
 
 .userPage{
     background: linear-gradient(135deg, #022b2b, #09b1ba);
