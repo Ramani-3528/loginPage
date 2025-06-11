@@ -112,7 +112,7 @@ button{
 }
 /* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
 @media (max-width: 576){
-    .userPage{
+    .userPageContainer{
         padding: 4rem;
     }
 }
