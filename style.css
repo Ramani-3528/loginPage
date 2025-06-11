@@ -42,7 +42,7 @@ p{
 }
 
 .componentSpacing{
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .dflex-col{
@@ -99,8 +99,8 @@ button{
 .userPage{
     background: linear-gradient(135deg, #033c3c, #09b1ba);
     padding: 2rem;
-    border-radius: 4rem;
-    margin-top: 2rem;
+    border-radius: 3rem;
+    /* margin-top: 2rem; */
 }
 
 .loginPage{
@@ -110,3 +110,4 @@ button{
     padding: 6rem 3rem 6rem 3rem;
     box-shadow: 0 0 8px rgba(21, 22, 23, 0.6);
 }
+
