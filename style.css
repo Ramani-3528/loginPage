@@ -112,7 +112,7 @@ button{
 }
 /* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
 @media (max-width: 576){
-    .componentSpacing{
+    .userPage{
         padding: 4rem;
     }
 }
