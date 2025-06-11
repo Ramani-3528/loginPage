@@ -115,5 +115,9 @@ button{
     .userPageContainer{
         margin: 4rem;
     }
+    .userPage{
+        padding: 0rem;
+        border-radius: 1rem;
+    }
 }
 
