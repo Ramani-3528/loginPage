@@ -20,15 +20,6 @@ body{
     font-family: "Lora";
 }
 
-h1,
-h2,
-h3,
-h4,
-h6,
-p{
-    /* text-wrap: balance; */
-}
-
 .screensize{
     max-width: 600px;
     margin: auto;
@@ -39,10 +30,6 @@ p{
     grid-template-columns: 1fr;
     padding: 1rem;
     margin: 1rem;
-}
-
-.componentSpacing{
-    /* padding: 2rem; */
 }
 
 .dflex-col{
