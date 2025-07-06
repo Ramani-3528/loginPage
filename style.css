@@ -88,7 +88,7 @@ button:hover{
 }
 
 .userPage{
-    background: linear-gradient(135deg, #022b2b, #09b1ba);
+    background-color: linear-gradient(135deg, #022b2b, #09b1ba);
     padding: 2rem;
     border-radius: 3rem;
     /* margin-top: 2rem; */
