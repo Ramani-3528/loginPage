@@ -15,9 +15,21 @@ html{
 }
 
 body{
-    background-color: #ffffff;
-    font-family: "Poetsen One";
+    background: url(./assets/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "";
     font-family: "Lora";
+    height:100vh;
+}
+
+:root{
+    --primaryColor: #ffffff;
+    --secondaryColor: burlywood;
+    --tertiararyColor: #212529;
+    --ffprimary: "Dancing";
+    --ffsecondary: "Lora";
 }
 
 .screensize{
@@ -41,10 +53,11 @@ body{
 
 h1{
     font-size: 4.5rem;
-    font-family: "Poetsen One";
-    font-weight: 500;
+    font-family: "Dancing";
+    font-weight: 800;
     text-align: center;
     padding: 2rem;
+    color: var(--secondaryColor);
 }
 
 h2{
@@ -54,22 +67,31 @@ h2{
     padding: 4rem;
 }
 
+i{
+    color: var(--primaryColor);
+    font-size: 8rem;
+}
+
 input,
 label{
     font-family: "Lora";
     font-size: 2.5rem;
     font-weight: 500;
     color: burlywood;
-    padding: 1rem;
-    margin: 0.6rem;
+    padding: 0.7rem;
+    margin: 0.3rem;
     outline: none;
     border-radius: 1rem;
 }
 
 input{
-    border: 0.2rem solid rgb(7, 107, 102);
+    background-color: var(--primaryColor);
     box-shadow: 0 0 0.8rem rgba(21, 22, 23, 0.6);
 }
+
+/* input:active{
+    border: 0.1rem solid #09b1ba;
+} */
 
 button{
     font-family: "Lora";
@@ -88,9 +110,10 @@ button:hover{
 }
 
 .userPage{
-    background-color: linear-gradient(135deg, #022b2b, #09b1ba);
+    /* background-color: #09b1ba; */
     padding: 2rem;
     border-radius: 3rem;
+    backdrop-filter: blur(0.2rem);
     /* margin-top: 2rem; */
 }
 
@@ -101,14 +124,10 @@ button:hover{
     padding: 6rem 3rem 6rem 3rem;
     box-shadow: 0 0 0.8rem rgba(21, 22, 23, 0.6);
 }
+
 /* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
 @media (max-width: 576){
     .userPageContainer{
-        margin: 4rem;
-    }
-    .userPage{
-        margin: 4rem;
-        border-radius: 1rem;
     }
     input,
     label{
