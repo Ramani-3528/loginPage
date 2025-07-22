@@ -19,15 +19,15 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: "";
-    font-family: "Lora";
+    font-family: var(--ffprimary);
+    font-family: var(--ffsecondary);
     height:100vh;
 }
 
 :root{
     --primaryColor: #ffffff;
     --secondaryColor: burlywood;
-    --tertiararyColor: #212529;
+    --tertiararyColor: #090909;
     --ffprimary: "Dancing";
     --ffsecondary: "Lora";
 }
@@ -42,6 +42,12 @@ body{
     grid-template-columns: 1fr;
     padding: 1rem;
     margin: 1rem;
+}
+
+.dflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dflex-col{
@@ -77,16 +83,15 @@ label{
     font-family: "Lora";
     font-size: 2.5rem;
     font-weight: 500;
-    color: burlywood;
+    color: var(--ffsecondary);
     padding: 0.7rem;
     margin: 0.3rem;
-    outline: none;
-    border-radius: 1rem;
+    border: none;
 }
 
 input{
     background-color: var(--primaryColor);
-    box-shadow: 0 0 0.8rem rgba(21, 22, 23, 0.6);
+    box-shadow: 0 0 0.8rem var(--tertiararyColor);
 }
 
 /* input:active{
@@ -97,7 +102,7 @@ button{
     font-family: "Lora";
     font-size: 1.8rem;
     font-weight: 550;
-    color: burlywood;
+    color: var(--secondaryColor);
     cursor: pointer;
     padding: 0.8rem 3rem 0.8rem 3rem;
     margin-top: 2rem;
@@ -105,30 +110,20 @@ button{
     border-radius: 1rem;
 }
 button:hover{
-    background-color: burlywood;
-    color: #022b2b;
-}
-
-.userPage{
-    /* background-color: #09b1ba; */
-    padding: 2rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(0.2rem);
-    /* margin-top: 2rem; */
+    background-color: var(--secondaryColor);
+    color: var(--tertiararyColor);
 }
 
 .loginPage{
-    background-color: whitesmoke;
+    background-color: var(--primaryColor);
     border-radius: 4rem;
     margin-top: 6rem;
     padding: 6rem 3rem 6rem 3rem;
-    box-shadow: 0 0 0.8rem rgba(21, 22, 23, 0.6);
+    box-shadow: 0 0 0.8rem var(--tertiararyColor);
 }
 
 /* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
 @media (max-width: 576){
-    .userPageContainer{
-    }
     input,
     label{
     font-size: 1.6rem;
