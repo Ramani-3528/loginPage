@@ -122,11 +122,15 @@ button:active {
     box-shadow: 0 0 0.8rem var(--primaryColor);
 }
 
-.loginPage{
+.loginPageBody{
     background-color: var(--primaryColor);
     border-radius: 4rem;
     padding: 6rem 3rem;
     box-shadow: 0 0 0.8rem var(--secondaryColor);
+}
+
+.buttonBody{
+    margin: 2rem 0rem;
 }
 
 /* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
@@ -148,7 +152,7 @@ button:active {
         padding: 3rem 0rem;
     }
 
-    .loginPage{
+    .loginPageBody{
         padding: 0;
     }
 }
