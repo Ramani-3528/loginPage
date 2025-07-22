@@ -26,14 +26,20 @@ body{
 
 :root{
     --primaryColor: #ffffff;
-    --secondaryColor: burlywood;
-    --tertiararyColor: #090909;
+    --secondaryColor: #212529;
+    --tertiararyColor: #fdfeff37;
+    --darkColor: rgb(4, 139, 149);
     --ffprimary: "Dancing";
     --ffsecondary: "Lora";
 }
 
-.screensize{
-    max-width: 600px;
+.screensize-1{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.screensize-2{
+    max-width: 500px;
     margin: auto;
 }
 
@@ -57,15 +63,6 @@ body{
     align-items: center;
 }
 
-h1{
-    font-size: 4.5rem;
-    font-family: "Dancing";
-    font-weight: 800;
-    text-align: center;
-    padding: 2rem;
-    color: var(--secondaryColor);
-}
-
 h2{
     font-family: "Lora";
     font-size: 3rem;
@@ -76,6 +73,7 @@ h2{
 i{
     color: var(--primaryColor);
     font-size: 8rem;
+    padding: 5rem 0rem 3rem 0rem;
 }
 
 input,
@@ -83,7 +81,7 @@ label{
     font-family: "Lora";
     font-size: 2.5rem;
     font-weight: 500;
-    color: var(--ffsecondary);
+    color: var(--secondaryColor);
     padding: 0.7rem;
     margin: 0.3rem;
     border: none;
@@ -91,12 +89,8 @@ label{
 
 input{
     background-color: var(--primaryColor);
-    box-shadow: 0 0 0.8rem var(--tertiararyColor);
+    box-shadow: 0 0 0.8rem var(--primaryColor);
 }
-
-/* input:active{
-    border: 0.1rem solid #09b1ba;
-} */
 
 button{
     font-family: "Lora";
@@ -104,32 +98,58 @@ button{
     font-weight: 550;
     color: var(--secondaryColor);
     cursor: pointer;
-    padding: 0.8rem 3rem 0.8rem 3rem;
-    margin-top: 2rem;
-    background-color: rgb(4, 139, 149);
-    border-radius: 1rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    background-color: var(--darkColor);
+    border: none;
 }
-button:hover{
-    background-color: var(--secondaryColor);
-    color: var(--tertiararyColor);
+
+/* button:hover{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+} */
+
+button:active {
+    border: 0.3rem solid var(--primaryColor);
+}
+
+.userPage{
+    background-color: var(--tertiararyColor);
+    backdrop-filter: blur(0.2rem);
+    padding: 5rem 0rem;
+    border-radius: 3rem;
+    border: 0.2rem solid var(--primaryColor);
+    box-shadow: 0 0 0.8rem var(--primaryColor);
 }
 
 .loginPage{
     background-color: var(--primaryColor);
     border-radius: 4rem;
-    margin-top: 6rem;
-    padding: 6rem 3rem 6rem 3rem;
-    box-shadow: 0 0 0.8rem var(--tertiararyColor);
+    padding: 6rem 3rem;
+    box-shadow: 0 0 0.8rem var(--secondaryColor);
 }
 
 /* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
 @media (max-width: 576){
     input,
     label{
-    font-size: 1.6rem;
-    padding: 1rem;
-    margin: 0.3rem;
+    font-size: 1rem;
+    padding: 0.5rem;
     border-radius: 0.7rem;
+    }
+
+    i{
+        font-size: 6rem;
+        padding: 3rem 0rem 1rem 0rem;
+    }
+
+    .userPage{
+        margin: 6rem 0rem;
+        padding: 3rem 0rem;
+    }
+
+    .loginPage{
+        padding: 0;
     }
 }
 
